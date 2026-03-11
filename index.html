@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mana Kashuk – Next‑Gen Scientific Portfolio</title>
+<style>
+    /* ---------- CORE THEME ---------- */
+    :root {
+        --charcoal: #0d0d0d;
+        --white: #ffffff;
+        --teal: #00d1d1;
+        --copper: #c58f44;
+        --gray: #888888;
+        --gradient-hero: linear-gradient(135deg, #0d0d0d 0%, #00d1d1 100%);
+        --font-header: 'Montserrat', sans-serif;
+        --font-body: 'Inter', sans-serif;
+    }
+    body {
+        margin: 0;
+        font-family: var(--font-body);
+        background: var(--charcoal);
+        color: var(--white);
+        overflow-x: hidden;
+    }
+
+    /* ---------- HERO SECTION ---------- */
+    .hero {
+        height: 100vh;
+        background: var(--gradient-hero);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 6rem;
+        position: relative;
+        overflow: hidden;
+    }
+    .hero h1 {
+        font-size: 4rem;
+        margin: 0;
+        font-family: var(--font-header);
+        font-weight: 800;
+    }
+    .hero h2 {
+        font-size: 1.7rem;
+        margin-top: 0.5rem;
+        color: var(--white);
+        opacity: 0.9;
+    }
+    .hero p {
+        margin-top: 1.5rem;
+        max-width: 700px;
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+    .hero-buttons {
+        margin-top: 2rem;
+        display: flex;
+        gap: 1.2rem;
+    }
+    .btn {
+        padding: 1rem 2rem;
+        border-radius: 40px;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+    .btn-teal { background: var(--teal); color: var(--charcoal);}    
+    .btn-copper { background: var(--copper); color: var(--white);}  
+    .btn-white { background: var(--white); color: var(--charcoal);}  
+    .btn:hover { transform: translateY(-4px); opacity: 0.85; }
+
+    /* ---------- SECTION WRAPPER ---------- */
+    section { padding: 6rem 4rem; position: relative; }
+    h3.section-title {
+        font-family: var(--font-header);
+        font-size: 2.6rem;
+        margin-bottom: 2rem;
+        color: var(--teal);
+    }
+
+    /* ---------- WHAT I DO CARDS ---------- */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+    }
+    .card {
+        background: var(--white);
+        color: var(--charcoal);
+        padding: 2rem;
+        border-radius: 20px;
+        border: 2px solid var(--teal);
+        transition: 0.3s;
+        min-height: 260px;
+    }
+    .card:hover { transform: translateY(-6px); }
+    .card h4 { margin-top: 0; font-size: 1.4rem; font-weight: 700; }
+    .card p { color: var(--gray); }
+
+    /* ---------- PROJECT GRID ---------- */
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+    .project-card {
+        background: #111;
+        padding: 2rem;
+        border-radius: 20px;
+        border: 1.5px solid var(--teal);
+        transition: 0.3s;
+    }
+    .project-card:hover { border-color: var(--copper); transform: translateY(-6px);}    
+    .project-card h4 { margin: 0 0 0.6rem 0; color: var(--teal); }
+    .project-card p { color: var(--white); opacity: 0.8; }
+
+    /* ---------- ABOUT ---------- */
+    .about {
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+    .about-text { flex: 1; max-width: 650px; }
+    .about-text p { line-height: 1.6; }
+    .accent-line {
+        width: 6px;
+        background: var(--copper);
+    }
+
+    /* ---------- RESUME BUTTON ROW ---------- */
+    .resume-buttons {
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    /* ---------- CONTACT ---------- */
+    .contact p { font-size: 1.2rem; line-height: 2; }
+
+</style>
+</head>
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>Mana Kashuk</h1>
+    <h2>PhD Candidate in Pharmaceutical Sciences</h2>
+    <p>
+        I work at the intersection of medicinal plants, natural products, computational evaluation, and research workflow design. My background combines translational scientific research with AI-enabled tools, research integrity, grants support, and clinical research management.
+        <br><br>
+        I am exploring roles in translational science, natural product evaluation, and AI‑driven research operations.
+    </p>
+
+    <div class="hero-buttons">
+        #projectsView Selected Projects</a>
+        <a href="#resume" class="btn btn-copper">Download Resume</a>
+        <a href="#contact" class="btn btn-white">Contact</a>
+    </div>
+</section>
+
+<!-- WHAT I DO -->
+<section id="what-i-do">
+    <h3 class="section-title">What I Do</h3>
+    <div class="cards">
+        <div class="card">
+            <h4>Translational Science & Natural Products</h4>
+            <p>Medicinal plants, natural products, computational screening, docking-based evaluation, and the scientific assessment of bioactive compounds.</p>
+        </div>
+        <div class="card">
+            <h4>Research Operations & AI Workflows</h4>
+            <p>Research integrity support, workflow tools, grants/compliance operations, and structured scientific decision support.</p>
+        </div>
+        <div class="card">
+            <h4>Product-Minded Scientific Tools</h4>
+            <p>Prototype systems spanning natural products, research administration, and scientific information management.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SELECTED PROJECTS -->
+<section id="projects">
+    <h3 class="section-title">Selected Projects</h3>
+    <div class="projects">
+
+        <div class="project-card">
+            <h4>BLOOMZ</h4>
+            <p>Natural products & GC‑MS workflows for extract‑centered discovery.</p>
+        </div>
+
+        <div class="project-card">
+            <h4>PeakPack</h4>
+            <p>LC‑MS dataset preparation tool enabling structured downstream analysis.</p>
+        </div>
+
+        <div class="project-card">
+            <h4>R‑GenLab</h4>
+            <p>Computational chemistry tool for molecular generation and visualization.</p>
+        </div>
+
+        <div class="project-card">
+            <h4>MSU‑RISe‑RS</h4>
+            <p>Research integrity & security workflow prototype for compliance‑aware support.</p>
+        </div>
+
+        <div class="project-card">
+            <h4>Rice‑RBLgpt</h4>
+            <p>AI‑enabled pre‑/post‑award workflow support prototype.</p>
+        </div>
+
+        <div class="project-card">
+            <h4>MedSynAI</h4>
+            <p>Medical synonym assistant for biomedical terminology alignment.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h3 class="section-title">About</h3>
+
+    <div class="about">
+        <div class="accent-line"></div>
+        <div class="about-text">
+            <p>
+                I am a PhD candidate in Pharmaceutical Sciences with work spanning medicinal plants, natural products, translational phytochemistry, computational evaluation of bioactive compounds, and AI-enabled research tools.
+            </p>
+            <p>
+                My background includes natural product screening, docking-based evaluation, translational science, clinical research management training, research integrity support, and grants/compliance workflow development.
+            </p>
+            <p>
+                Based in Houston and open to remote, hybrid, project-based, and post‑PhD full‑time roles.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume">
+    <h3 class="section-title">Resume</h3>
+    <div class="resume-buttons">
+        <a href="#" class="btn btn-teal">Science Resume</a>
+        <a href="#" class="btn btn-white">Research Support Resume</a>
+        <a href="#" class="btn btn-copper">Full CV</a>
+    </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+    <h3 class="section-title">Selected Publications</h3>
+    <p>• Add 3–5 key publications with links/DOIs here.</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h3 class="section-title">Contact</h3>
+    <p>Email</p>
+    <p>LinkedIn</p>
+    <p>GitHub</p>
+    <p>Houston, TX • Open to remote, hybrid, project‑based & post‑PhD roles</p>
+</section>
+
+</body>
+</html>
