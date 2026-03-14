@@ -1,763 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Mana Kashuk | Natural Products, Translational Science & AI-Enabled Research Operations</title>
-  <meta
-    name="description"
-    content="Mana Kashuk is a PhD candidate in Pharmaceutical Sciences working across natural products, translational science, computational evaluation, and AI-enabled research operations."
-  />
-
-  <meta property="og:title" content="Mana Kashuk | Natural Products, Translational Science & AI-Enabled Research Operations" />
-  <meta property="og:description" content="PhD candidate in Pharmaceutical Sciences working across medicinal plants, natural products, translational phytochemistry, and AI-enabled research tools." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://manakashuk.me/" />
-  <meta property="og:image" content="https://manakashuk.me/1755781768925.jpg" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Mana Kashuk | Natural Products, Translational Science & AI-Enabled Research Operations" />
-  <meta name="twitter:description" content="PhD candidate in Pharmaceutical Sciences working across medicinal plants, natural products, translational phytochemistry, and AI-enabled research tools." />
-  <meta name="twitter:image" content="https://manakashuk.me/1755781768925.jpg" />
-
-  <link rel="icon" type="image/png" href="favicon.png" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --bg: #f3f3ef;
-      --surface: #ffffff;
-      --hero: #dfe8d8;
-      --hero-2: #e7eee2;
-      --text: #141414;
-      --muted: #575757;
-      --border: rgba(0,0,0,0.08);
-      --shadow: 0 10px 24px rgba(0,0,0,0.05);
-      --accent: #5b63c7;
-      --max: 1180px;
-      --radius: 28px;
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: "Inter", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.5;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover { opacity: 0.88; }
-
-    .container {
-      width: min(var(--max), calc(100% - 2rem));
-      margin: 0 auto;
-    }
-
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(243,243,239,0.94);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(0,0,0,0.05);
-    }
-
-    .nav {
-      min-height: 70px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-    }
-
-    .brand {
-      font-weight: 800;
-      color: var(--text);
-      font-size: 1rem;
-    }
-
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem 1.2rem;
-    }
-
-    .nav-links a {
-      color: var(--text);
-      font-weight: 600;
-      font-size: 0.94rem;
-    }
-
-    section {
-      padding: 2rem 0;
-    }
-
-    .title-serif {
-      font-family: "Cormorant Garamond", serif;
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      line-height: 0.92;
-      margin: 0;
-    }
-
-    .section-title {
-      font-family: "Cormorant Garamond", serif;
-      font-size: clamp(2.6rem, 5vw, 4.1rem);
-      line-height: 0.92;
-      letter-spacing: -0.03em;
-      margin: 0 0 1rem 0;
-      font-weight: 700;
-    }
-
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-    }
-
-    /* HERO */
-    .hero-wrap {
-      display: grid;
-      grid-template-columns: 1.08fr 0.92fr;
-      gap: 1.2rem;
-      align-items: stretch;
-    }
-
-    .hero-left {
-      background: linear-gradient(180deg, var(--hero) 0%, var(--hero-2) 100%);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 1.75rem 1.75rem 1.6rem;
-      min-height: 360px;
-    }
-
-    .eyebrow {
-      font-size: 0.82rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      font-weight: 800;
-      color: var(--accent);
-      margin-bottom: 0.8rem;
-    }
-
-    .hero-title {
-      font-family: "Cormorant Garamond", serif;
-      font-size: clamp(3rem, 6vw, 5.2rem);
-      font-weight: 700;
-      line-height: 0.9;
-      letter-spacing: -0.04em;
-      max-width: 11ch;
-      margin: 0;
-    }
-
-    .hero-subtitle {
-      margin-top: 0.8rem;
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--muted);
-    }
-
-    .hero-copy {
-      margin-top: 1.2rem;
-      font-size: 1.03rem;
-      max-width: 680px;
-    }
-
-    .hero-buttons {
-      margin-top: 1.5rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.8rem;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 999px;
-      padding: 0.88rem 1.2rem;
-      font-weight: 700;
-      font-size: 0.94rem;
-      border: 1px solid transparent;
-      transition: transform 0.18s ease;
-    }
-
-    .btn:hover { transform: translateY(-2px); }
-
-    .btn-primary {
-      background: #161616;
-      color: #fff;
-    }
-
-    .btn-secondary {
-      background: #fff;
-      color: var(--text);
-      border-color: var(--border);
-    }
-
-    .hero-right {
-      display: grid;
-      grid-template-rows: 1fr 1fr;
-      gap: 1.2rem;
-    }
-
-    .hero-image {
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      background: #fff;
-      min-height: 170px;
-    }
-
-    .hero-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    /* ABOUT */
-    .about-wrap {
-      display: grid;
-      grid-template-columns: 1.08fr 0.92fr;
-      gap: 1.2rem;
-      align-items: stretch;
-    }
-
-    .about-left {
-      background: linear-gradient(180deg, var(--hero) 0%, var(--hero-2) 100%);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 1.75rem;
-    }
-
-    .about-top {
-      display: grid;
-      grid-template-columns: 1fr 0.92fr;
-      gap: 1rem;
-      align-items: start;
-    }
-
-    .about-mini {
-      font-size: 0.98rem;
-      line-height: 1.55;
-    }
-
-    .focus-text {
-      margin-top: 1.25rem;
-      color: var(--accent);
-      font-weight: 700;
-      font-size: 0.98rem;
-      max-width: 460px;
-    }
-
-    .about-box {
-      margin-top: 1.5rem;
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      padding: 1.2rem 1.3rem;
-      display: grid;
-      gap: 1rem;
-      max-width: 470px;
-    }
-
-    .about-row {
-      display: grid;
-      grid-template-columns: 48px 1fr;
-      gap: 0.9rem;
-      align-items: start;
-    }
-
-    .about-num {
-      font-family: "Cormorant Garamond", serif;
-      font-size: 2rem;
-      line-height: 1;
-      font-weight: 700;
-    }
-
-    .about-row strong {
-      display: block;
-      margin-bottom: 0.16rem;
-      font-size: 1rem;
-    }
-
-    .about-right {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .about-right .card {
-      height: 100%;
-    }
-
-    .about-right img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    /* PROJECTS */
-    .projects-section .section-title {
-      margin-bottom: 1.2rem;
-    }
-
-    .category-strip {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .category-card {
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 22px;
-      box-shadow: var(--shadow);
-      padding: 1.1rem 1.15rem;
-    }
-
-    .category-card h3 {
-      margin: 0 0 0.45rem;
-      font-size: 1rem;
-      color: var(--accent);
-    }
-
-    .category-card p {
-      margin: 0;
-      font-size: 0.93rem;
-      color: var(--muted);
-    }
-
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1rem;
-    }
-
-    .project-card {
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 22px;
-      box-shadow: var(--shadow);
-      padding: 1rem 1rem 1.1rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.8rem;
-      min-height: 215px;
-    }
-
-    .project-logo {
-      height: 94px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .project-logo img {
-      max-height: 100%;
-      width: auto;
-      object-fit: contain;
-    }
-
-    .project-card h3 {
-      margin: 0;
-      font-size: 1rem;
-    }
-
-    .project-card p {
-      margin: 0;
-      font-size: 0.93rem;
-      color: var(--muted);
-    }
-
-    .project-links {
-      margin-top: auto;
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      font-weight: 700;
-      font-size: 0.92rem;
-    }
-
-    /* PUBLICATIONS */
-    .pub-wrap {
-      display: grid;
-      grid-template-columns: 1fr 0.88fr;
-      gap: 1rem;
-      align-items: stretch;
-    }
-
-    .pub-list {
-      display: grid;
-      gap: 0.9rem;
-    }
-
-    .pub-card {
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      box-shadow: var(--shadow);
-      padding: 1.05rem 1.15rem;
-    }
-
-    .pub-card strong {
-      display: block;
-      margin-bottom: 0.35rem;
-      font-size: 0.98rem;
-    }
-
-    .pub-meta {
-      font-size: 0.93rem;
-      color: var(--muted);
-      margin-bottom: 0.45rem;
-    }
-
-    .pub-image {
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      background: #fff;
-    }
-
-    .pub-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    /* CONTACT */
-    .contact-band {
-      border: 1px solid var(--border);
-      border-radius: 28px;
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      background: #fff;
-    }
-
-    .contact-banner {
-      height: 150px;
-      overflow: hidden;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .contact-banner img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .contact-card {
-      padding: 1.5rem 1.2rem 1.7rem;
-      text-align: center;
-    }
-
-    .contact-copy {
-      max-width: 820px;
-      margin: 0 auto 1rem;
-      color: var(--muted);
-      font-size: 1rem;
-    }
-
-    .contact-links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1rem 1.2rem;
-      font-weight: 700;
-      font-size: 0.95rem;
-    }
-
-    footer {
-      padding: 1.8rem 0 2.6rem;
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    @media (max-width: 980px) {
-      .hero-wrap,
-      .about-wrap,
-      .pub-wrap,
-      .category-strip,
-      .project-grid,
-      .about-top {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-right {
-        grid-template-rows: auto;
-      }
-    }
-
-    @media (max-width: 720px) {
-      .nav {
-        align-items: flex-start;
-        flex-direction: column;
-        padding: 0.9rem 0;
-      }
-
-      .nav-links {
-        gap: 0.7rem 1rem;
-      }
-
-      .hero-left,
-      .about-left {
-        padding: 1.3rem;
-      }
-
-      .hero-title {
-        max-width: none;
-      }
-
-      .hero-buttons,
-      .contact-links {
-        width: 100%;
-      }
-
-      .btn {
-        width: 100%;
-      }
-
-      .project-logo {
-        height: 78px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="#top">Mana Kashuk</a>
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Selected Projects</a>
-        <a href="#publications">Selected Publications</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-wrap">
-        <div class="hero-left">
-          <div class="eyebrow">PhD Candidate in Pharmaceutical Sciences</div>
-          <h1 class="hero-title">Natural Products, Translational Science & AI-Enabled Research Operations</h1>
-          <div class="hero-subtitle">Houston, TX | Open to Remote, Hybrid and Project-based Roles</div>
-
-          <p class="hero-copy">
-            I work at the intersection of medicinal plants, natural products, computational evaluation of bioactive compounds, and AI-enabled research tools.
-          </p>
-
-          <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary">View Selected Projects</a>
-            <a href="files/Mana_Science_Resume.pdf" class="btn btn-secondary" target="_blank">Science Resume</a>
-            <a href="files/Mana_ResearchSupport_Resume.pdf" class="btn btn-secondary" target="_blank">Research Support Resume</a>
+export default function PortfolioMockup() {
+  return (
+    <div className="min-h-screen bg-stone-50 text-slate-900">
+      <header className="border-b border-emerald-100 bg-white/90 backdrop-blur sticky top-0 z-50">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+          <div>
+            <div className="text-2xl font-semibold tracking-tight">Mana Kashuk</div>
+            <div className="text-sm text-slate-600">Pharmacology PhD Candidate | Botanical Evidence | Scientific Documentation</div>
           </div>
+          <nav className="hidden md:flex gap-6 text-sm text-slate-700">
+            <a href="#about" className="hover:text-emerald-700">About</a>
+            <a href="#focus" className="hover:text-emerald-700">Research Focus</a>
+            <a href="#projects" className="hover:text-emerald-700">Projects</a>
+            <a href="#publications" className="hover:text-emerald-700">Publications</a>
+            <a href="#phyto" className="hover:text-emerald-700">Phyto ClinIQ</a>
+            <a href="#contact" className="hover:text-emerald-700">Contact</a>
+          </nav>
         </div>
+      </header>
 
-        <div class="hero-right">
-          <div class="hero-image">
-            <img src="Manaheadshot26.JPG" alt="Professional headshot of Mana Kashuk" />
-          </div>
-          <div class="hero-image">
-            <img src="Mana.png" alt="Mana Kashuk working in the lab" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="container about-wrap">
-        <div class="about-left">
-          <div class="about-top">
-            <div>
-              <h2 class="section-title">About Mana Kashuk</h2>
-              <div class="focus-text">
-                Current Focus<br>
-                translational science, natural product evaluation, scientific screening, and research-support/program operations roles.
-              </div>
-            </div>
-
-            <div class="about-mini">
-              I am a PhD candidate in Pharmaceutical Sciences with work spanning medicinal plants, natural products, translational phytochemistry, computational evaluation of bioactive compounds, and AI-enabled research tools.
-            </div>
-          </div>
-
-          <div class="about-box">
-            <div class="about-row">
-              <div class="about-num">01</div>
-              <div>
-                <strong>Background</strong>
-                natural product screening, docking-based evaluation, translational science, clinical research management training, research integrity support, and grants/compliance workflow development.
-              </div>
-            </div>
-
-            <div class="about-row">
-              <div class="about-num">02</div>
-              <div>
-                <strong>Interest</strong>
-                I am especially interested in roles that sit at the intersection of scientific depth, systems thinking, and practical execution, whether in translational science, scientific screening, research support, or AI-enabled operations.
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="about-right">
-          <div class="card">
-            <img src="science.jpg" alt="Natural products themed scientific image" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="projects-section">
-      <div class="container">
-        <h2 class="section-title">Selected Projects</h2>
-
-        <div class="category-strip">
-          <div class="category-card">
-            <h3>Translational Science & Natural Products</h3>
-            <p>Medicinal plants, natural products, computational screening, docking-based evaluation, and early scientific assessment of bioactive compounds.</p>
-          </div>
-
-          <div class="category-card">
-            <h3>Research Operations & AI Workflows</h3>
-            <p>Research integrity support, AI-enabled workflow tools, grants/compliance-adjacent operations, and structured research decision support.</p>
-          </div>
-
-          <div class="category-card">
-            <h3>Product-Minded Scientific Tools</h3>
-            <p>Prototype tools and workflow systems built across natural products, clinical/research support, and scientific information management.</p>
-          </div>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-logo">
-              <img src="Rice RBLP.png" alt="Rice RBLP logo" />
-            </div>
-            <h3>Rice RBLP</h3>
-            <p>Smart assistant for pre- and post-award support at Rice Biotech LaunchPad.</p>
-            <div class="project-links">
-              <a href="https://github.com/ManaKashuk/Rice-RBLgpt" target="_blank">GitHub ↗</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-logo">
-              <img src="Bloomz.png" alt="BLOOMZ logo" />
-            </div>
-            <h3>BLOOMZ</h3>
-            <p>The spectral intelligence concept for natural product discovery and GC-MS-centered workflows.</p>
-            <div class="project-links">
-              <a href="https://github.com/ManaKashuk/BLOOMZ" target="_blank">GitHub ↗</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-logo">
-              <img src="CLINIQ.png" alt="CLINIQ logo" />
-            </div>
-            <h3>CLINIQ</h3>
-            <p>Clinical intelligence for integrity and quality in research-support and decision workflows.</p>
-            <div class="project-links">
-              <a href="https://github.com/ManaKashuk/cliniq" target="_blank">GitHub ↗</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-logo">
-              <img src="RISe.png" alt="RISe logo" />
-            </div>
-            <h3>RISe</h3>
-            <p>Morgan research integrity support engine aligned with research security and compliance operations.</p>
-            <div class="project-links">
-              <a href="https://github.com/ManaKashuk/MSU-RISe-RS" target="_blank">GitHub ↗</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="publications">
-      <div class="container pub-wrap">
+      <section className="max-w-6xl mx-auto px-6 py-14 grid lg:grid-cols-[1.2fr_0.8fr] gap-10 items-center">
         <div>
-          <h2 class="section-title">Selected Publications</h2>
-
-          <div class="pub-list">
-            <article class="pub-card">
-              <strong>Targeting Poly (ADP-ribose) Polymerase-1 for the treatment of neurodegenerative diseases</strong>
-              <div class="pub-meta">Chemical Biology & Drug Design, 2025</div>
-              <a href="#" target="_blank">DOI / Article Link ↗</a>
-            </article>
-
-            <article class="pub-card">
-              <strong>Discovery of PARP-1 Inhibitors for Triple-Negative Breast Cancer via Structure-Based Virtual High-Throughput Screening</strong>
-              <div class="pub-meta">ChemistrySelect, 2025</div>
-              <a href="#" target="_blank">DOI / Article Link ↗</a>
-            </article>
+          <div className="inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-800 mb-4">
+            Houston, TX • Open to remote, hybrid, and project-based roles
           </div>
-        </div>
-
-        <div class="pub-image">
-          <img src="1755781768925.jpg" alt="Scientific collage banner" />
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container contact-band">
-        <div class="contact-banner">
-          <img src="1755781768925.jpg" alt="Scientific collage banner" />
-        </div>
-
-        <div class="contact-card">
-          <h2 class="section-title">Contact</h2>
-          <p class="contact-copy">
-            I welcome conversations about post-PhD roles, project-based collaborations, translational science opportunities, and research-support/program operations work.
+          <h1 className="text-4xl md:text-5xl font-semibold tracking-tight leading-tight">
+            Natural Products, Clinical Evidence, and AI-Enabled Scientific Workflows
+          </h1>
+          <p className="mt-5 text-lg text-slate-700 leading-8 max-w-2xl">
+            I am a PhD candidate in Pharmaceutical Sciences working at the intersection of medicinal plants,
+            translational science, clinical evidence review, scientific documentation, and research operations.
           </p>
-
-          <div class="contact-links">
-            <a href="mailto:mana.kashuk@gmail.com">mana.kashuk@gmail.com</a>
-            <a href="https://www.linkedin.com/in/manakashuk/" target="_blank">LinkedIn ↗</a>
-            <a href="https://github.com/ManaKashuk" target="_blank">GitHub ↗</a>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <a href="#phyto" className="rounded-2xl bg-emerald-700 px-5 py-3 text-white font-medium shadow-sm hover:bg-emerald-800">Explore Phyto ClinIQ</a>
+            <a href="#publications" className="rounded-2xl border border-slate-300 px-5 py-3 font-medium hover:bg-white">View Publications</a>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+        <div className="relative">
+          <div className="aspect-[4/5] rounded-[28px] bg-gradient-to-br from-emerald-100 via-white to-sky-100 shadow-xl border border-white p-5">
+            <div className="h-full rounded-[24px] bg-white flex items-center justify-center text-center p-8">
+              <div>
+                <div className="text-sm uppercase tracking-[0.2em] text-emerald-700 mb-3">Signature Focus</div>
+                <div className="text-2xl font-semibold leading-tight">Phyto ClinIQ</div>
+                <div className="mt-3 text-slate-600">Clinical Evidence &amp; Translational Insights for Medicinal Plants</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <footer>
-    <div class="container">
-      © <span id="year"></span> Mana Kashuk
+      <section id="about" className="max-w-6xl mx-auto px-6 py-6 grid md:grid-cols-2 gap-8">
+        <div className="rounded-[28px] bg-white border border-slate-200 p-8 shadow-sm">
+          <h2 className="text-2xl font-semibold mb-4">About</h2>
+          <p className="text-slate-700 leading-8">
+            My work spans medicinal plants, natural products, translational phytochemistry, clinical research
+            training, compliance-oriented research support, and AI-enabled information organization.
+          </p>
+        </div>
+        <div className="rounded-[28px] bg-white border border-slate-200 p-8 shadow-sm">
+          <h2 className="text-2xl font-semibold mb-4">Professional Direction</h2>
+          <p className="text-slate-700 leading-8">
+            I am especially interested in scientific affairs, botanical evidence review, product documentation,
+            regulatory-aligned scientific communication, and project-based collaboration in natural products and health sciences.
+          </p>
+        </div>
+      </section>
+
+      <section id="focus" className="max-w-6xl mx-auto px-6 py-14">
+        <h2 className="text-3xl font-semibold mb-8">Research Focus</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          {[
+            ["Botanical Evidence", "Clinical and translational interpretation of medicinal plant research for scientific and product relevance."],
+            ["Scientific Documentation", "Structured summaries, evidence synthesis, and compliance-aware communication for technical audiences."],
+            ["AI-Enabled Workflows", "LLM-enabled mapping, information organization, and smarter research support systems."],
+          ].map(([title, body]) => (
+            <div key={title} className="rounded-[24px] border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 className="font-semibold text-lg mb-3">{title}</h3>
+              <p className="text-slate-700 leading-7">{body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="projects" className="max-w-6xl mx-auto px-6 py-14">
+        <div className="flex items-end justify-between gap-4 mb-8">
+          <h2 className="text-3xl font-semibold">Selected Projects</h2>
+          <div className="text-sm text-slate-500">Designed to read like research programs, not logo tiles.</div>
+        </div>
+        <div className="grid md:grid-cols-2 gap-6">
+          {[
+            ["Phyto ClinIQ", "A recurring clinical evidence series translating medicinal plant studies for academic and industry audiences."],
+            ["RISe", "AI-enabled research integrity support framework for compliance, governance, and institutional workflows."],
+            ["Rice RBLP GPT", "Research administration and compliance support concept developed during BioTech LaunchPad internship."],
+            ["BLOOMZ Score", "Natural-product intelligence concept focused on spectral and botanical evidence organization."],
+          ].map(([title, body]) => (
+            <div key={title} className="rounded-[24px] bg-white border border-slate-200 p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="font-semibold text-lg mb-3">{title}</h3>
+              <p className="text-slate-700 leading-7">{body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="publications" className="max-w-6xl mx-auto px-6 py-14">
+        <h2 className="text-3xl font-semibold mb-8">Selected Publications</h2>
+        <div className="space-y-4">
+          {[
+            "Targeting Poly (ADP-ribose) Polymerase-1 for the Treatment of Neurodegenerative Diseases — Chemical Biology & Drug Design, 2025",
+            "Discovery of PARP-1 Inhibitors for Triple-Negative Breast Cancer via Structure-Based Virtual High-Throughput Screening — ChemistrySelect, 2025",
+          ].map((item) => (
+            <div key={item} className="rounded-[20px] bg-white border border-slate-200 p-5 shadow-sm text-slate-800">{item}</div>
+          ))}
+        </div>
+      </section>
+
+      <section id="phyto" className="bg-slate-950 text-white py-16 mt-6">
+        <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-[1fr_1fr] gap-10 items-center">
+          <div>
+            <div className="text-emerald-300 text-sm uppercase tracking-[0.2em] mb-3">Featured Series</div>
+            <h2 className="text-4xl font-semibold">Phyto ClinIQ</h2>
+            <p className="mt-4 text-slate-300 text-lg leading-8 max-w-xl">
+              Clinical Evidence &amp; Translational Insights for Medicinal Plants — a LinkedIn and web series designed for both academic and industry audiences.
+            </p>
+          </div>
+          <div className="rounded-[28px] bg-white/5 border border-white/10 p-6 backdrop-blur">
+            <div className="text-sm text-emerald-300 mb-3">Sample Issue Format</div>
+            <ul className="space-y-3 text-slate-200">
+              <li>• Botanical identity and extract context</li>
+              <li>• Clinical study design and endpoints</li>
+              <li>• Main findings and limitations</li>
+              <li>• Translational relevance for evidence-minded readers</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="max-w-6xl mx-auto px-6 py-16">
+        <div className="rounded-[32px] bg-gradient-to-r from-emerald-700 to-sky-700 text-white p-8 md:p-10 shadow-xl">
+          <h2 className="text-3xl font-semibold mb-4">Contact</h2>
+          <p className="text-white/90 max-w-2xl leading-8">
+            I welcome conversations about project-based collaborations, scientific affairs, botanical evidence work,
+            translational science, and research-support opportunities.
+          </p>
+          <div className="mt-6 text-white/95 font-medium">m.rassaeikashuk2817@student.tsu.edu • LinkedIn: manakashuk</div>
+        </div>
+      </section>
     </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+  );
+}
