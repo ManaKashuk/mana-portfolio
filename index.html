@@ -3,66 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mana Kashuk | Medicinal Plants, Clinical Evidence & Translational Science</title>
+  <title>Mana Kashuk | Botanical Evidence, Clinical Insight & Translational Science</title>
   <meta
     name="description"
-    content="Mana Kashuk is a PhD candidate in Pharmaceutical Sciences focused on medicinal plants, clinical evidence, translational science, and botanical research communication."
+    content="Mana Kashuk is a Pharmacology PhD candidate working across medicinal plants, botanical evidence, clinical insight, translational science, and AI-enabled scientific workflows."
   />
 
-  <meta property="og:title" content="Mana Kashuk | Medicinal Plants, Clinical Evidence & Translational Science" />
-  <meta property="og:description" content="PhD candidate in Pharmaceutical Sciences focused on medicinal plants, clinical evidence, translational science, and botanical research communication." />
+  <meta property="og:title" content="Mana Kashuk | Botanical Evidence, Clinical Insight & Translational Science" />
+  <meta property="og:description" content="Pharmacology PhD candidate focused on medicinal plants, scientific documentation, clinical evidence, and translational science." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://chemuze.com/" />
-  <meta property="og:image" content="https://chemuze.com/Mana-Headshot.png" />
+  <meta property="og:image" content="https://chemuze.com/Mana%20Headshot.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Mana Kashuk | Medicinal Plants, Clinical Evidence & Translational Science" />
-  <meta name="twitter:description" content="PhD candidate in Pharmaceutical Sciences focused on medicinal plants, clinical evidence, translational science, and botanical research communication." />
-  <meta name="twitter:image" content="https://chemuze.com/Mana-Headshot.png" />
-
-  <link rel="icon" type="image/png" href="PhytoCliniq-Logo.png" />
+  <meta name="twitter:title" content="Mana Kashuk | Botanical Evidence, Clinical Insight & Translational Science" />
+  <meta name="twitter:description" content="Pharmacology PhD candidate focused on medicinal plants, scientific documentation, clinical evidence, and translational science." />
+  <meta name="twitter:image" content="https://chemuze.com/Mana%20Headshot.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --bg: #f6f5f1;
+      --bg: #f7f8f3;
       --surface: #ffffff;
-      --surface-soft: #eef3eb;
-      --text: #132018;
-      --muted: #5c655f;
-      --border: rgba(16, 24, 18, 0.08);
-      --shadow: 0 12px 28px rgba(16, 24, 18, 0.06);
+      --text: #102018;
+      --muted: #5e6a63;
       --green: #1f7a45;
-      --green-soft: #dfe9de;
-      --blue: #123d7a;
-      --max: 1160px;
-      --radius: 28px;
+      --green-soft: #e9f3ea;
+      --blue: #143f7e;
+      --blue-soft: #ebf2fb;
+      --line: rgba(16, 32, 24, 0.08);
+      --shadow: 0 16px 40px rgba(16, 32, 24, 0.08);
+      --radius-xl: 32px;
+      --radius-lg: 24px;
+      --max: 1180px;
     }
 
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       font-family: "Inter", sans-serif;
-      background: var(--bg);
+      background: linear-gradient(180deg, #f7f8f3 0%, #f3f6f1 100%);
       color: var(--text);
-      line-height: 1.55;
+      line-height: 1.6;
     }
 
     img {
-      max-width: 100%;
       display: block;
+      max-width: 100%;
     }
 
     a {
-      color: var(--blue);
+      color: inherit;
       text-decoration: none;
     }
-
-    a:hover { opacity: 0.88; }
 
     .container {
       width: min(var(--max), calc(100% - 2rem));
@@ -73,24 +71,35 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(246,245,241,0.94);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(0,0,0,0.05);
+      background: rgba(247, 248, 243, 0.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(16, 32, 24, 0.06);
     }
 
     .nav {
-      min-height: 72px;
+      min-height: 78px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 1rem;
     }
 
+    .brand-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
     .brand {
+      font-size: 1.3rem;
       font-weight: 800;
-      color: var(--text);
-      font-size: 1rem;
-      letter-spacing: -0.01em;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-sub {
+      font-size: 0.9rem;
+      color: var(--muted);
+      font-weight: 500;
     }
 
     .nav-links {
@@ -100,240 +109,212 @@
     }
 
     .nav-links a {
-      color: var(--text);
+      font-size: 0.95rem;
       font-weight: 600;
-      font-size: 0.94rem;
+      color: #22322a;
     }
 
-    section { padding: 2.25rem 0; }
-
-    .section-title {
-      font-family: "Cormorant Garamond", serif;
-      font-size: clamp(2.6rem, 5vw, 4.1rem);
-      line-height: 0.92;
-      letter-spacing: -0.03em;
-      margin: 0 0 1rem 0;
-      font-weight: 700;
+    section {
+      padding: 2.25rem 0;
     }
 
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-    }
-
-    .eyebrow {
-      display: inline-block;
-      font-size: 0.8rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      font-weight: 800;
-      color: var(--blue);
-      margin-bottom: 0.95rem;
-    }
-
-    .hero-wrap {
+    .hero-grid {
       display: grid;
-      grid-template-columns: 1.08fr 0.92fr;
-      gap: 1.2rem;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 1.25rem;
       align-items: stretch;
+      padding-top: 1.5rem;
     }
 
     .hero-left {
-      background: linear-gradient(180deg, #e4ece1 0%, #edf3ea 100%);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
+      background: linear-gradient(135deg, #eef6ef 0%, #e3efe5 100%);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
       box-shadow: var(--shadow);
-      padding: 1.9rem 1.9rem 1.7rem;
-      min-height: 380px;
+      padding: 2rem;
+      min-height: 520px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      gap: 0.5rem;
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      background: rgba(31, 122, 69, 0.08);
+      border: 1px solid rgba(31, 122, 69, 0.12);
+      color: var(--green);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 1rem;
     }
 
     .hero-title {
-      font-family: "Cormorant Garamond", serif;
-      font-size: clamp(3rem, 6vw, 5rem);
-      font-weight: 700;
-      line-height: 0.92;
-      letter-spacing: -0.04em;
-      max-width: 10.8ch;
+      font-size: clamp(2.7rem, 5.6vw, 5rem);
+      line-height: 0.98;
+      letter-spacing: -0.045em;
       margin: 0;
-    }
-
-    .hero-subtitle {
-      margin-top: 0.85rem;
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--muted);
+      font-weight: 800;
+      max-width: 10.5ch;
     }
 
     .hero-copy {
-      margin-top: 1.2rem;
-      font-size: 1.03rem;
-      max-width: 650px;
-      color: #243127;
+      margin-top: 1.1rem;
+      font-size: 1.08rem;
+      color: #2a392f;
+      max-width: 60ch;
     }
 
     .hero-buttons {
-      margin-top: 1.5rem;
       display: flex;
       flex-wrap: wrap;
       gap: 0.8rem;
+      margin-top: 1.4rem;
     }
 
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      border-radius: 999px;
-      padding: 0.88rem 1.2rem;
+      padding: 0.9rem 1.2rem;
+      border-radius: 18px;
       font-weight: 700;
-      font-size: 0.94rem;
-      border: 1px solid transparent;
-      transition: transform 0.18s ease;
+      font-size: 0.96rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .btn:hover { transform: translateY(-2px); }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(16, 32, 24, 0.08);
+    }
 
     .btn-primary {
-      background: #161616;
+      background: linear-gradient(135deg, var(--green), #156738);
       color: #fff;
     }
 
     .btn-secondary {
       background: #fff;
+      border: 1px solid var(--line);
       color: var(--text);
-      border-color: var(--border);
     }
 
     .hero-right {
       display: grid;
       grid-template-rows: 1fr 1fr;
-      gap: 1.2rem;
+      gap: 1.25rem;
     }
 
-    .hero-image {
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
+    .image-card,
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
       box-shadow: var(--shadow);
       overflow: hidden;
-      background: #fff;
-      min-height: 185px;
     }
 
-    .hero-image img {
+    .image-card img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
 
-    .about-wrap {
+    .image-card {
+      min-height: 250px;
+    }
+
+    .two-grid {
       display: grid;
-      grid-template-columns: 1.02fr 0.98fr;
-      gap: 1.2rem;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
       align-items: stretch;
     }
 
-    .about-left {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
+    .card-body {
       padding: 1.75rem;
     }
 
-    .about-copy {
-      font-size: 1rem;
-      color: #273229;
-      max-width: 62ch;
-    }
-
-    .focus-text {
-      margin-top: 1rem;
+    .section-label {
+      font-size: 0.82rem;
+      font-weight: 800;
       color: var(--green);
-      font-weight: 700;
-      font-size: 0.98rem;
-      max-width: 500px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.65rem;
     }
 
-    .about-box {
-      margin-top: 1.4rem;
-      background: var(--surface-soft);
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      padding: 1.2rem 1.3rem;
-      display: grid;
-      gap: 1rem;
-      max-width: 540px;
+    .section-title {
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+      margin: 0 0 0.85rem 0;
+      font-weight: 800;
     }
 
-    .about-row {
-      display: grid;
-      grid-template-columns: 48px 1fr;
-      gap: 0.9rem;
-      align-items: start;
-    }
-
-    .about-num {
-      font-family: "Cormorant Garamond", serif;
-      font-size: 2rem;
-      line-height: 1;
-      font-weight: 700;
-      color: var(--blue);
-    }
-
-    .about-row strong {
-      display: block;
-      margin-bottom: 0.2rem;
+    .section-copy {
       font-size: 1rem;
+      color: #34423a;
+      margin: 0 0 1rem 0;
     }
 
-    .about-right .card,
-    .pub-image,
-    .phyto-image {
-      height: 100%;
+    .soft-card {
+      background: linear-gradient(135deg, var(--green-soft), #f7fbf7);
+      border: 1px solid rgba(31, 122, 69, 0.1);
+      border-radius: var(--radius-lg);
+      padding: 1.1rem 1.1rem;
+      margin-top: 1rem;
     }
 
-    .about-right img,
-    .pub-image img,
-    .phyto-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    .soft-card strong {
+      display: block;
+      margin-bottom: 0.35rem;
     }
 
-    .category-strip {
+    .focus-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 1rem;
-      margin-bottom: 1.5rem;
     }
 
-    .category-card,
-    .project-card,
-    .pub-card {
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 22px;
+    .focus-card {
+      background: linear-gradient(180deg, #ffffff 0%, #f8faf8 100%);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
       box-shadow: var(--shadow);
+      padding: 1.4rem;
     }
 
-    .category-card {
-      padding: 1.15rem;
-    }
-
-    .category-card h3 {
-      margin: 0 0 0.45rem;
-      font-size: 1rem;
+    .focus-card h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.05rem;
       color: var(--blue);
+      letter-spacing: -0.02em;
     }
 
-    .category-card p,
-    .project-card p,
-    .pub-card p {
+    .focus-card p {
       margin: 0;
-      font-size: 0.94rem;
       color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .projects-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .projects-note {
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-weight: 500;
     }
 
     .project-grid {
@@ -343,53 +324,118 @@
     }
 
     .project-card {
-      padding: 1.1rem 1.1rem 1.2rem;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+      padding: 1.4rem;
+      min-height: 220px;
       display: flex;
       flex-direction: column;
-      gap: 0.8rem;
-      min-height: 205px;
+      justify-content: space-between;
     }
 
     .project-card h3 {
+      margin: 0 0 0.55rem 0;
+      font-size: 1.12rem;
+      letter-spacing: -0.02em;
+    }
+
+    .project-card p {
       margin: 0;
-      font-size: 1.02rem;
-      color: var(--text);
+      color: var(--muted);
+      font-size: 0.96rem;
     }
 
-    .project-links {
-      margin-top: auto;
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
+    .project-link {
+      margin-top: 1rem;
+      color: var(--blue);
       font-weight: 700;
-      font-size: 0.92rem;
+      font-size: 0.93rem;
     }
 
-    .phyto-wrap,
-    .pub-wrap {
+    .phyto-band {
+      background: linear-gradient(135deg, #0d1625 0%, #15253d 100%);
+      color: #fff;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .phyto-grid {
       display: grid;
-      grid-template-columns: 1fr 0.88fr;
-      gap: 1rem;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 0;
       align-items: stretch;
     }
 
-    .phyto-card {
-      background: linear-gradient(180deg, #eff5ed 0%, #ffffff 100%);
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      box-shadow: var(--shadow);
-      padding: 1.35rem 1.3rem;
+    .phyto-left {
+      padding: 2rem;
     }
 
-    .phyto-card p {
-      margin: 0 0 0.9rem;
-      color: #263026;
+    .phyto-label {
+      font-size: 0.82rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #9ad4b0;
+      margin-bottom: 0.8rem;
+    }
+
+    .phyto-title {
+      font-size: clamp(2rem, 4.8vw, 3.6rem);
+      line-height: 1;
+      letter-spacing: -0.045em;
+      margin: 0 0 0.8rem 0;
+      font-weight: 800;
+    }
+
+    .phyto-tagline {
+      font-size: 1.05rem;
+      color: #d8e5ee;
+      margin-bottom: 1rem;
+    }
+
+    .phyto-copy {
+      color: #c1d0da;
+      font-size: 0.98rem;
+      max-width: 56ch;
     }
 
     .phyto-list {
-      margin: 0.7rem 0 0;
+      margin: 1rem 0 0;
       padding-left: 1.1rem;
-      color: var(--muted);
+      color: #d9e3ea;
+    }
+
+    .phyto-list li {
+      margin-bottom: 0.5rem;
+    }
+
+    .phyto-right {
+      background: rgba(255, 255, 255, 0.04);
+      border-left: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .phyto-right img {
+      width: 100%;
+      max-width: 520px;
+      height: auto;
+      object-fit: contain;
+      background: #fff;
+      border-radius: 24px;
+      padding: 1rem;
+    }
+
+    .pub-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      align-items: stretch;
     }
 
     .pub-list {
@@ -398,7 +444,11 @@
     }
 
     .pub-card {
-      padding: 1.05rem 1.15rem;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      padding: 1.2rem;
     }
 
     .pub-card strong {
@@ -407,51 +457,38 @@
       font-size: 0.98rem;
     }
 
-    .pub-meta {
-      font-size: 0.93rem;
+    .pub-card p {
+      margin: 0;
       color: var(--muted);
-      margin-bottom: 0.45rem;
+      font-size: 0.94rem;
     }
 
-    .contact-band {
-      border: 1px solid var(--border);
-      border-radius: 28px;
+    .contact-cta {
+      background: linear-gradient(135deg, var(--green), var(--blue));
+      border-radius: var(--radius-xl);
+      color: #fff;
+      padding: 2rem;
       box-shadow: var(--shadow);
-      overflow: hidden;
-      background: #fff;
     }
 
-    .contact-banner {
-      height: 180px;
-      overflow: hidden;
-      border-bottom: 1px solid var(--border);
+    .contact-cta h2 {
+      margin: 0 0 0.8rem 0;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
     }
 
-    .contact-banner img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .contact-card {
-      padding: 1.6rem 1.2rem 1.8rem;
-      text-align: center;
-    }
-
-    .contact-copy {
-      max-width: 820px;
-      margin: 0 auto 1rem;
-      color: var(--muted);
-      font-size: 1rem;
+    .contact-cta p {
+      margin: 0 0 1rem 0;
+      color: rgba(255,255,255,0.92);
+      max-width: 60ch;
     }
 
     .contact-links {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
       gap: 1rem 1.2rem;
       font-weight: 700;
-      font-size: 0.95rem;
     }
 
     footer {
@@ -462,17 +499,27 @@
     }
 
     @media (max-width: 980px) {
-      .hero-wrap,
-      .about-wrap,
-      .category-strip,
+      .hero-grid,
+      .two-grid,
+      .focus-grid,
       .project-grid,
-      .phyto-wrap,
-      .pub-wrap {
+      .phyto-grid,
+      .pub-grid {
         grid-template-columns: 1fr;
       }
 
       .hero-right {
         grid-template-rows: auto;
+      }
+
+      .projects-head {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .phyto-right {
+        border-left: 0;
+        border-top: 1px solid rgba(255,255,255,0.08);
       }
     }
 
@@ -488,13 +535,10 @@
       }
 
       .hero-left,
-      .about-left,
-      .phyto-card {
-        padding: 1.3rem;
-      }
-
-      .hero-title {
-        max-width: none;
+      .card-body,
+      .phyto-left,
+      .contact-cta {
+        padding: 1.35rem;
       }
 
       .hero-buttons,
@@ -511,109 +555,85 @@
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="#top">Mana Kashuk</a>
+      <div class="brand-wrap">
+        <a class="brand" href="#top">Mana Kashuk</a>
+        <div class="brand-sub">Pharmacology PhD Candidate | Botanical Evidence | Scientific Documentation</div>
+      </div>
       <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#focus">Research Focus</a>
         <a href="#projects">Projects</a>
-        <a href="#phytocliniq">Phyto ClinIQ</a>
         <a href="#publications">Publications</a>
+        <a href="#phytocliniq">Phyto ClinIQ</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero">
-      <div class="container hero-wrap">
+    <section>
+      <div class="container hero-grid">
         <div class="hero-left">
-          <div class="eyebrow">PhD Candidate in Pharmaceutical Sciences</div>
-          <h1 class="hero-title">Medicinal Plants, Clinical Evidence &amp; Translational Science</h1>
-          <div class="hero-subtitle">Houston, TX | Open to Remote, Hybrid, and Project-Based Roles</div>
-
+          <div class="pill">Houston, TX • Open to remote, hybrid, and project-based roles</div>
+          <h1 class="hero-title">Natural Products, Clinical Evidence, and AI-Enabled Scientific Workflows</h1>
           <p class="hero-copy">
-            I am a researcher working at the intersection of medicinal plants, natural products, translational evaluation of bioactive compounds, and scientific communication for botanical evidence.
+            I am a PhD candidate in Pharmaceutical Sciences working at the intersection of medicinal plants, translational science, clinical evidence review, scientific documentation, and research operations.
           </p>
-
           <div class="hero-buttons">
             <a href="#phytocliniq" class="btn btn-primary">Explore Phyto ClinIQ</a>
-            <a href="#publications" class="btn btn-secondary">Selected Publications</a>
+            <a href="#publications" class="btn btn-secondary">View Publications</a>
           </div>
         </div>
 
         <div class="hero-right">
-          <div class="hero-image">
+          <div class="image-card">
             <img src="Mana Headshot.png" alt="Professional headshot of Mana Kashuk" />
           </div>
-          <div class="hero-image">
-            <img src="Mana Lab.png" alt="Mana Kashuk working in the lab" />
+          <div class="image-card">
+            <img src="Mana Lab.png" alt="Mana Kashuk working in the laboratory" />
           </div>
         </div>
       </div>
     </section>
 
     <section id="about">
-      <div class="container about-wrap">
-        <div class="about-left">
-          <h2 class="section-title">About</h2>
-
-          <p class="about-copy">
-            I am a PhD candidate in Pharmaceutical Sciences focused on medicinal plants, natural products, and translational evaluation of bioactive compounds. My work integrates computational screening, clinical evidence interpretation, and scientific analysis of botanical research.
-          </p>
-
-          <p class="about-copy">
-            I am particularly interested in bridging academic research and industry practice through scientific documentation, translational interpretation, and evidence-based evaluation of medicinal plants.
-          </p>
-
-          <div class="focus-text">
-            Current focus: botanical evidence interpretation, translational phytochemistry, scientific documentation, and research communication for medicinal plant science.
-          </div>
-
-          <div class="about-box">
-            <div class="about-row">
-              <div class="about-num">01</div>
-              <div>
-                <strong>Scientific Background</strong>
-                Natural products, pharmacology, biotechnology, medical training, and evidence-based interpretation of botanical research.
-              </div>
-            </div>
-
-            <div class="about-row">
-              <div class="about-num">02</div>
-              <div>
-                <strong>Professional Direction</strong>
-                Scientific affairs, botanical evidence review, translational science, and roles connecting medicinal plant research with practical scientific application.
-              </div>
+      <div class="container two-grid">
+        <div class="card">
+          <div class="card-body">
+            <div class="section-label">About</div>
+            <h2 class="section-title">Scientific identity rooted in plants, evidence, and translation.</h2>
+            <p class="section-copy">
+              My work spans medicinal plants, natural products, translational phytochemistry, clinical research training, compliance-oriented research support, and AI-enabled information organization.
+            </p>
+            <div class="soft-card">
+              <strong>Professional Direction</strong>
+              I am especially interested in scientific affairs, botanical evidence review, product documentation, regulatory-aligned scientific communication, and project-based collaboration in natural products and health sciences.
             </div>
           </div>
         </div>
 
-        <div class="about-right">
-          <div class="card">
-            <img src="Herbal Present.jpg" alt="Mana Kashuk presenting medicinal plant research" />
-          </div>
+        <div class="image-card">
+          <img src="Herbal Present.jpg" alt="Mana Kashuk presenting botanical research" />
         </div>
       </div>
     </section>
 
     <section id="focus">
       <div class="container">
-        <h2 class="section-title">Research Focus</h2>
-
-        <div class="category-strip">
-          <div class="category-card">
-            <h3>Medicinal Plants</h3>
-            <p>Scientific investigation of botanical compounds, medicinal plant relevance, and natural product discovery.</p>
+        <div class="section-label">Research Focus</div>
+        <h2 class="section-title">Core themes shaping my current work</h2>
+        <div class="focus-grid">
+          <div class="focus-card">
+            <h3>Botanical Evidence</h3>
+            <p>Clinical and translational interpretation of medicinal plant research for scientific and product relevance.</p>
           </div>
-
-          <div class="category-card">
-            <h3>Clinical Evidence</h3>
-            <p>Interpretation of clinical studies and translational evaluation of research supporting medicinal plants.</p>
+          <div class="focus-card">
+            <h3>Scientific Documentation</h3>
+            <p>Structured summaries, evidence synthesis, and compliance-aware communication for technical audiences.</p>
           </div>
-
-          <div class="category-card">
-            <h3>Translational Science</h3>
-            <p>Bridging botanical research with scientific communication, product relevance, and real-world application.</p>
+          <div class="focus-card">
+            <h3>AI-Enabled Workflows</h3>
+            <p>LLM-enabled mapping, information organization, and smarter research support systems.</p>
           </div>
         </div>
       </div>
@@ -621,113 +641,106 @@
 
     <section id="projects">
       <div class="container">
-        <h2 class="section-title">Selected Projects</h2>
+        <div class="projects-head">
+          <div>
+            <div class="section-label">Selected Projects</div>
+            <h2 class="section-title">Research programs, platforms, and translational tools</h2>
+          </div>
+          <div class="projects-note">Designed to read like research programs, not logo tiles.</div>
+        </div>
 
         <div class="project-grid">
-          <article class="project-card">
-            <h3>RISe</h3>
-            <p>Research integrity support framework built to strengthen compliance, governance, and institutional decision workflows.</p>
-            <div class="project-links">
-              <a href="https://github.com/ManaKashuk/MSU-RISe-RS" target="_blank">GitHub ↗</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <h3>Rice RBLP GPT</h3>
-            <p>Research administration and compliance support concept developed during the BioTech LaunchPad internship.</p>
-            <div class="project-links">
-              <a href="https://github.com/ManaKashuk/Rice-RBLgpt" target="_blank">GitHub ↗</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <h3>BLOOMZ</h3>
-            <p>Natural product and spectral intelligence concept centered on botanical evidence organization and GC-MS workflows.</p>
-            <div class="project-links">
-              <a href="https://github.com/ManaKashuk/BLOOMZ" target="_blank">GitHub ↗</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <h3>Frederick / LLM Data Mapping Work</h3>
-            <p>AI-enabled mapping and scientific information organization work supporting clearer research interoperability and structured expert review.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="phytocliniq">
-      <div class="container">
-        <h2 class="section-title">Phyto ClinIQ</h2>
-
-        <div class="phyto-wrap">
-          <div class="phyto-card">
-            <p><strong>Phyto ClinIQ</strong> is a botanical evidence series focused on interpreting clinical studies, translational findings, and research relevance in medicinal plants.</p>
-
-            <p><strong>Tagline:</strong><br>
-            Clinical Evidence &amp; Translational Insights for Medicinal Plants</p>
-
-            <p>
-              The series is designed for both academic and industry audiences and highlights how medicinal plant research can be translated into clear, structured scientific understanding.
-            </p>
-
-            <ul class="phyto-list">
-              <li>Clinical evidence behind medicinal plants</li>
-              <li>Interpretation of human studies and translational findings</li>
-              <li>Research quality, design, and evidence relevance</li>
-              <li>Scientific insights for botanical and natural product fields</li>
-            </ul>
-
-            <div class="hero-buttons">
-              <a href="https://www.linkedin.com/in/manakashuk/" target="_blank" class="btn btn-primary">Follow on LinkedIn</a>
+          <div class="project-card">
+            <div>
+              <h3>Phyto ClinIQ</h3>
+              <p>A recurring clinical evidence series translating medicinal plant studies for academic and industry audiences.</p>
             </div>
           </div>
 
-          <div class="phyto-image card">
-            <img src="PhytoCliniq Logo.png" alt="Phyto ClinIQ logo" />
+          <div class="project-card">
+            <div>
+              <h3>RISe</h3>
+              <p>AI-enabled research integrity support framework for compliance, governance, and institutional workflows.</p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div>
+              <h3>Rice RBLP GPT</h3>
+              <p>Research administration and compliance support concept developed during BioTech LaunchPad internship.</p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div>
+              <h3>BLOOMZ Score</h3>
+              <p>Natural-product intelligence concept focused on spectral and botanical evidence organization.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section id="publications">
-      <div class="container pub-wrap">
+      <div class="container pub-grid">
         <div>
-          <h2 class="section-title">Selected Publications</h2>
-
+          <div class="section-label">Selected Publications</div>
+          <h2 class="section-title">Recent work and scientific contributions</h2>
           <div class="pub-list">
-            <article class="pub-card">
+            <div class="pub-card">
               <strong>Targeting Poly (ADP-ribose) Polymerase-1 for the Treatment of Neurodegenerative Diseases</strong>
-              <div class="pub-meta">Chemical Biology &amp; Drug Design, 2025</div>
-              <p>Review-focused scientific contribution on PARP-1 and neurodegenerative disease biology.</p>
-            </article>
-
-            <article class="pub-card">
+              <p>Chemical Biology &amp; Drug Design, 2025</p>
+            </div>
+            <div class="pub-card">
               <strong>Discovery of PARP-1 Inhibitors for Triple-Negative Breast Cancer via Structure-Based Virtual High-Throughput Screening</strong>
-              <div class="pub-meta">ChemistrySelect, 2025</div>
-              <p>Structure-based screening and scientific interpretation of computational drug discovery findings.</p>
-            </article>
+              <p>ChemistrySelect, 2025</p>
+            </div>
           </div>
         </div>
 
-        <div class="pub-image card">
-          <img src="Mana Lab.png" alt="Mana Kashuk in laboratory research setting" />
+        <div class="image-card">
+          <img src="Mana Lab.png" alt="Mana Kashuk in a laboratory setting" />
+        </div>
+      </div>
+    </section>
+
+    <section id="phytocliniq">
+      <div class="container">
+        <div class="phyto-band">
+          <div class="phyto-grid">
+            <div class="phyto-left">
+              <div class="phyto-label">Featured Series</div>
+              <h2 class="phyto-title">Phyto ClinIQ</h2>
+              <div class="phyto-tagline">Clinical Evidence &amp; Translational Insights for Medicinal Plants</div>
+              <p class="phyto-copy">
+                A LinkedIn and web series designed for both academic and industry audiences, translating medicinal plant studies into clear, structured scientific insight.
+              </p>
+              <ul class="phyto-list">
+                <li>Botanical identity and extract context</li>
+                <li>Clinical study design and endpoints</li>
+                <li>Main findings and limitations</li>
+                <li>Translational relevance for evidence-minded readers</li>
+              </ul>
+              <div class="hero-buttons">
+                <a href="https://www.linkedin.com/in/manakashuk/" target="_blank" class="btn btn-primary">Follow the Series</a>
+              </div>
+            </div>
+
+            <div class="phyto-right">
+              <img src="PhytoCliniq Logo.png" alt="Phyto ClinIQ logo" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="contact">
-      <div class="container contact-band">
-        <div class="contact-banner">
-          <img src="Herbal Present.jpg" alt="Mana Kashuk presenting research" />
-        </div>
-
-        <div class="contact-card">
-          <h2 class="section-title">Contact</h2>
-          <p class="contact-copy">
-            I welcome conversations about scientific affairs, botanical evidence work, translational science, medicinal plant research, and project-based collaborations.
+      <div class="container">
+        <div class="contact-cta">
+          <h2>Contact</h2>
+          <p>
+            I welcome conversations about project-based collaborations, scientific affairs, botanical evidence work, translational science, and research-support opportunities.
           </p>
-
           <div class="contact-links">
             <a href="mailto:m.rassaeikashuk2817@student.tsu.edu">m.rassaeikashuk2817@student.tsu.edu</a>
             <a href="https://www.linkedin.com/in/manakashuk/" target="_blank">LinkedIn ↗</a>
